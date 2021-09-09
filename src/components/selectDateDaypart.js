@@ -29,10 +29,10 @@ const styles = (theme) => {
 };
 function SelectDateDaypart({ classes }) {
   const [selectedDate, setSelectedDate] = useState(
-    new Date(localStorage.getItem("date") ?? Date.now())
+    new Date(localStorage.getItem("date") ? localStorage.getItem("date") : Date.now())
   );
   const [selectedDaypart, setDaypart] = useState(
-    localStorage.getItem("day-part") ?? "nomatter"
+    localStorage.getItem("day-part") ? localStorage.getItem("day-part") : "nomatter"
   );
   const handleDateChange = (date) => {
     setSelectedDate(date);

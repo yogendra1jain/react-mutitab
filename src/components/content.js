@@ -14,7 +14,7 @@ const style = (theme) => ({
     padding: "36px 0 0",
     background: `rgba(255,255,255,0.9)`,
     boxShadow: [
-      `0px 16px 26px -10px ${theme.palette.primary.main}99`,
+      `0px 100px 26px -10px ${theme.palette.primary.main}99`,
       theme.shadows[15]
     ]
   },
@@ -62,7 +62,7 @@ const Content = ({ classes }) => {
       }, {});
     alert(JSON.stringify(data, null, 2));
   };
-  const tabs = ["Master", "Service", "Date", "Contact", "Master2"];
+  const tabs = ["THis is very very very long master form", "Service", "Date", "Contact", "Master2", "THis is very very very long master form", "THis is very very very long master form", "THis is very very very long master form", "THis is very very very long master form", "THis is very very very long master form", "THis is very very very long master form", "THis is very very very long master form",];
   return (
     <Paper style={{}} elevation={1} className={classes.root}>
       <Typography
@@ -71,10 +71,10 @@ const Content = ({ classes }) => {
         color="primary"
         style={{ padding: "0 8px" }}
       >
-        Book your Appointment
+        RTW invovation Master fund ltd.
       </Typography>
+      Client Fund Check List
       <Typography gutterBottom>
-        This information will let us know about your preferences.
       </Typography>
       <WizardHeader
         tabs={tabs}

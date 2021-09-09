@@ -18,10 +18,10 @@ const style = (theme) => {
 
 const Contacts = ({ classes, formSubmitted }) => {
   const [name, setName] = useState(() => {
-    return localStorage.getItem("name") ?? "";
+    return localStorage.getItem("name") ? localStorage.getItem("name") : "";
   });
 
-  const [phone, setPhone] = useState(localStorage.getItem("phone") ?? "");
+  const [phone, setPhone] = useState(localStorage.getItem("phone") ? localStorage.getItem("phone") : "");
   const handleNameChange = (e) => {
     setName(e.target.value);
     localStorage.setItem("name", JSON.stringify(e.target.value));

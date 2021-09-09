@@ -5,7 +5,7 @@ import { curl, straight, color, haircut, shampoo } from "./iconPaths";
 
 const services = [
   {
-    name: "hair care and washing",
+    name: "hair care and washing hair care and washing hair care and washing hair care and washing",
     iconPath: shampoo,
     iconViewBox: "-20 -20 640.01063 640"
   },
@@ -41,7 +41,7 @@ const style = (theme) => ({
 });
 const SelectService = ({ classes }) => {
   const [serviceSelected, setServiceSelected] = useState(
-    JSON.parse(localStorage.getItem("services")) ?? getInitialState()
+    JSON.parse(localStorage.getItem("services")) ? JSON.parse(localStorage.getItem("services")) : getInitialState()
   );
   const handleChange = (name) => (e) => {
     const selected = { ...serviceSelected, [name]: e.target.checked };

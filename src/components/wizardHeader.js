@@ -10,7 +10,7 @@ const style = (theme) => ({
     position: "relative",
     padding: 0,
     textTransform: "uppercase",
-    height: 32,
+    height: "fit-content",
     width: "calc(100% + 16px)",
     margin: "24px -8px",
     [theme.breakpoints.down("xs")]: {
@@ -31,6 +31,7 @@ const style = (theme) => ({
   },
   indicator: {
     height: 32,
+    height: "100%",
     position: "absolute",
     top: 0,
     display: "flex",
